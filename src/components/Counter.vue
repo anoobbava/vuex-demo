@@ -1,12 +1,24 @@
 <template>
   <div>
     <h2>Welcome to Counter</h2>
-    <button>increment counter</button>
+    {{counter}}
+  </br>
+    <button @click="incrementCounter">increment counter</button>
   </div>
 </template>
 
 <script>
-</script>
+  export default {
+    methods: {
+      incrementCounter () {
+        this.$store.dispatch('inrementAction', 1)
+      }
+    },
 
-<style>
-</style>
+    computed: {
+      counter () {
+        return this.$store.getters.counter
+      }
+    }
+  }
+</script>
