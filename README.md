@@ -29,3 +29,4 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Output Page
+![image](https://raw.githubusercontent.com/anoobbava/vuex-demo/master/local/output_page.png)
